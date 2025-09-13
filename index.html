@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-cloud-sun"></i> Weather App</h1>
+            <p>Get real-time weather information for any location</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Enter city name...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="weather-card">
+            <div class="weather-header">
+                <h2 id="city-name">Search for a city</h2>
+                <p id="current-date">Loading date...</p>
+            </div>
+
+            <div class="weather-info">
+                <div class="weather-icon">
+                    <img id="weather-img" src="https://cdn-icons-png.flaticon.com/512/777/777610.png" alt="Weather Icon">
+                    <p id="weather-desc">Weather condition</p>
+                </div>
+
+                <div class="temperature">
+                    <h1 id="temp">--°C</h1>
+                    <div class="temp-details">
+                        <p>Feels like: <span id="feels-like">--°C</span></p>
+                        <p>Humidity: <span id="humidity">--%</span></p>
+                        <p>Wind: <span id="wind">-- km/h</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-cards">
+                    <!-- Forecast cards will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Weather data provided by OpenWeatherMap</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
